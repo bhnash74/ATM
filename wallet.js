@@ -1,9 +1,11 @@
+/*
 "use strict";
 
-var { walletBalance } = require("./atm");
+var { info } = require("./atm");
 var cash= 350.00;
 function checkWallet() {
-    console.log('You check your wallet and you have $'+walletBalance+' left.');
+    console.log('You check your wallet and you have $'+cash.info+' left.');
     return;
     }
 module.exports = {cash, checkWallet};
+*/

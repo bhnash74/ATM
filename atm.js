@@ -8,7 +8,7 @@ var { cash, checkWallet} = require('./wallet');
 function getBalance(){
     console.log ('your balance is: '+ accountBalance);
      
-}
+} 
 
 
 function withdraw(){
@@ -16,11 +16,11 @@ function withdraw(){
     var withdrawal = parseInt(prompt());
     if (accountBalance >= withdrawal) {
         newBalance = accountBalance- withdrawal;
-        walletBalance = cash + withdrawal;
+      //  walletBalance = cash + withdrawal;
         console.log ('Please collect your money below. \n  Your new balance is: '+newBalance);
-        console.log(walletBalance);
-        checkWallet();
-        return accountBalance=newBalance;
+      //  console.log(walletBalance);
+     //   checkWallet();
+        return  accountBalance = newbalance;
         
 
     }
@@ -31,12 +31,13 @@ function deposit(){
     console.log ('How much would you like to deposit?');
     var deposit = parseInt(prompt());
     newBalance = accountBalance+ deposit;
-    walletBalance = cash- deposit;
+   // walletBalance = cash- deposit;
     console.log ('Please deposit your money below. \n  Your new balance is: $'+newBalance);
-    console.log(walletBalance);
-    checkWallet();
-    return accountBalance=newBalance;
+  //  console.log(walletBalance);
+  //  checkWallet();
+    return accountBalance = newbalance;
 }
+
 function validatePin(){ 
     console.log ('Please enter your PIN');
     var pinNumber = prompt();
@@ -47,4 +48,5 @@ function validatePin(){
     
 }
 
-module.exports = {accountBalance, walletBalance, validatePin,getBalance,withdraw, deposit};
+module.exports = {validatePin,getBalance,withdraw, deposit};
+exports.info = {accountBalance,walletBalance};
