@@ -26,7 +26,6 @@ function atm() {
         break;
      case 4:
        console.log('Thank you, Come again soon!');
-       return;
        break;
 
       default:
