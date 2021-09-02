@@ -26,7 +26,9 @@ function atm() {
         break;
      case 4:
        console.log('Thank you, Come again soon!');
+       return;
        break;
+
       default:
       console.log('That is not an option');
         selectMenu(); // restart app

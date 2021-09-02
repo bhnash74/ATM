@@ -20,7 +20,7 @@ function withdraw(){
         console.log ('Please collect your money below. \n  Your new balance is: '+newBalance);
       //  console.log(walletBalance);
      //   checkWallet();
-        return  accountBalance = newbalance;
+        return  accountBalance = newBalance;
         
 
     }
@@ -35,7 +35,7 @@ function deposit(){
     console.log ('Please deposit your money below. \n  Your new balance is: $'+newBalance);
   //  console.log(walletBalance);
   //  checkWallet();
-    return accountBalance = newbalance;
+    return accountBalance = newBalance;
 }
 
 function validatePin(){ 
@@ -49,4 +49,3 @@ function validatePin(){
 }
 
 module.exports = {validatePin,getBalance,withdraw, deposit};
-exports.info = {accountBalance,walletBalance};
