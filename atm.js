@@ -33,6 +33,7 @@ function deposit(){
     newBalance = accountBalance+ deposit;
     walletBalance = cash- deposit;
     console.log ('Please deposit your money below. \n  Your new balance is: $'+newBalance);
+    console.log(walletBalance);
     checkWallet();
     return accountBalance=newBalance;
 }
