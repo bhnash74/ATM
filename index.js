@@ -10,22 +10,22 @@ function atm() {
 }
     function selectMenu() {
     console.log ('What service would you like? \n 1) Get Account Balance \n 2) Withdraw funds \n3) Deposit funds \n 4) Exit');
-    var service = prompt();
+    var service = parseInt(prompt());
     switch (service) {
-      case "1":
+      case 1:
         getBalance();
         selectMenu();
-      case "2":
+      case 2:
         withdraw();
         selectMenu();
         break;
 
-     case "3":
+     case 3:
         deposit();
         selectMenu();
         break;
-     case "4":
-console.log('Thank you - Come again soon!');
+     case 4:
+       console.log('Thank you, Come again soon!');
        break;
       default:
       console.log('That is not an option');
